@@ -14,7 +14,7 @@ app.use("/api/users", userRoutes);
 
 
 mongoose.connect(process.env.MONGODBURI)
-  .then(() => console.log(" MongoDB Connected"))
+  .then(() => console.log(" MongoDB Connected Sucessfully"))
   .catch((err) => console.log(" Connection Error =>", err));
 
   app.get("/", (req, res) => {
